@@ -1,8 +1,14 @@
+input.onButtonPressed(Button.A, function () {
+    basic.showString("Celcius : " + input.temperature())
+})
 input.onGesture(Gesture.TiltLeft, function () {
     soundExpression.happy.playUntilDone()
     basic.showIcon(IconNames.Happy)
     basic.pause(1000)
     basic.clearScreen()
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showString("Fahrenheit : " + (input.temperature() * 1.8 + 32))
 })
 input.onGesture(Gesture.TiltRight, function () {
     soundExpression.sad.playUntilDone()
@@ -39,4 +45,3 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
         basic.showString("High C ")
     }
 })
-
