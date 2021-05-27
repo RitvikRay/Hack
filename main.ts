@@ -39,3 +39,4 @@ input.onLogoEvent(TouchButtonEvent.Touched, function () {
         basic.showString("High C ")
     }
 })
+
